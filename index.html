@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myModule">
+<head >
+    <title>Weather Forecast</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css" /> 
+</head>
+    <body>
+        <header>
+            <div class="navbar navbar-default navbar-static-top"
+     role="navigation" bs-navbar>
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+      <span class="glyphicon glyphicon-cloud"></span>
+      Weather<strong>Forecast</strong></a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li data-match-route="/$"><a href="/">Home</a></li>
+    
+  </ul>
+  
+</div>
+        </header>
+        
+        <div class="container">
+            <div ng-view></div>
+        </div>    
+    </body>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/angular-route.min.js" type="text/javascript"></script>
+    <script src="js/angular-resource.min.js" type="text/javascript"></script>
+
+    <script src="app.js" type="text/javascript"></script>
+</html>
